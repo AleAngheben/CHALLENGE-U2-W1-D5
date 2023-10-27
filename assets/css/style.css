@@ -1,19 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,600;1,8..144,400;1,8..144,500&family=Spectral:wght@400;600&display=swap");
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: "Spectral", serif; */
+  font-family: "Roboto Serif", serif;
 }
 header {
   background-color: #ffc017;
   box-sizing: inherit;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #191919;
+  padding-top: 4rem;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  min-height: 90px;
-  border-bottom: 1px solid black;
+  min-height: 75px;
+  border-bottom: 1px solid #191919;
   padding-inline: 3.2rem;
   align-items: center;
+  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.scrollNav {
+  background-color: white;
+}
+.scrollNavBtn {
+  background-color: #1a8917;
 }
 nav ul {
   display: flex;
@@ -23,7 +37,7 @@ nav ul {
 }
 nav button {
   color: white;
-  background-color: black;
+  background-color: #191919;
   padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 20px;
@@ -39,11 +53,12 @@ nav button {
   flex-direction: column;
   padding-inline: 3.2rem;
   width: 700px;
-  margin-top: 5rem;
 }
 h1 {
   font-size: 100px;
   margin-bottom: 3rem;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
 }
 #header-content h3 {
   font-size: 26px;
@@ -53,7 +68,7 @@ h1 {
 #header-content button {
   width: 223px;
   color: white;
-  background-color: black;
+  background-color: #191919;
   padding: 0.7rem 2.2rem;
   border: none;
   border-radius: 20px;
@@ -66,6 +81,7 @@ section {
   margin-top: 3rem;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 3rem;
+  font-family: "Spectral", serif;
 }
 section h5 {
   display: flex;
@@ -110,11 +126,10 @@ section h5 {
 }
 
 article {
-  margin-top: 4rem;
-  padding-left: 3.2rem;
+  width: 60%;
 }
 .article-box {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -125,7 +140,7 @@ article {
   flex-grow: 1;
 }
 .article-box .img-box-container {
-  width: 35%;
+  width: 30%;
 }
 .article-box .img-box-container img {
   width: 100%;
@@ -158,4 +173,59 @@ article {
   border-radius: 20px;
   background-color: #f2f2f2;
   padding: 0.3rem 0.7rem;
+}
+
+main {
+  padding-inline: 3.2rem;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Spectral", serif;
+}
+aside {
+  width: 30%;
+  padding-left: 4.2rem;
+  flex-grow: 1;
+}
+
+aside h4 {
+  margin-bottom: 1rem;
+}
+
+aside #aside-main {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+aside #aside-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+aside h5 {
+  color: #1a8917;
+  margin-top: 1.5rem;
+}
+
+aside h5:hover {
+  color: #191919;
+}
+
+aside #aside-button-container button {
+  background-color: #f2f2f2;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+}
+
+aside #aside-footer {
+  margin-top: 2rem;
+}
+
+aside #aside-footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #6b6b6b;
+  font-weight: 400;
 }
