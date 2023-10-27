@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,600;1,8..144,400;1,8..144,500&family=Spectral:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,60@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,600;1,8..144,400;1,8..144,500&family=Roboto:wght@300;400;500;700&family=Spectral:wght@400;600&display=swap');0;1,8..144,400;1,8..144,500&family=Roboto:wght@300;400;500;700&family=Spectral:wght@400;600&display=swap");
 body {
   /* font-family: "Spectral", serif; */
   font-family: "Roboto Serif", serif;
@@ -81,13 +81,15 @@ section {
   margin-top: 3rem;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 3rem;
-  font-family: "Spectral", serif;
+  font-family: "Roboto", sans-serif;
 }
 section h5 {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 #section-cards-container {
   display: flex;
@@ -104,6 +106,8 @@ section h5 {
 
 .trending-cards h4 {
   font-size: 32px;
+  color: #f2f2f2;
+  font-weight: 500;
 }
 .trending-cards img {
   width: 20px;
@@ -115,10 +119,13 @@ section h5 {
   gap: 8px;
   align-items: center;
 }
+.trending-cards h6 {
+  font-size: 14px;
+}
 .trending-cards p {
   font-size: 15px;
   margin-block: 0.6rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .trending-cards span {
   font-size: 12px;
@@ -127,6 +134,7 @@ section h5 {
 
 article {
   width: 60%;
+  font-family: "Roboto", sans-serif;
 }
 .article-box {
   width: 100%;
@@ -136,11 +144,11 @@ article {
   margin-bottom: 3rem;
 }
 .article-text {
-  width: 60%;
+  width: 70%;
   flex-grow: 1;
 }
 .article-box .img-box-container {
-  width: 30%;
+  width: 25%;
 }
 .article-box .img-box-container img {
   width: 100%;
@@ -186,10 +194,18 @@ aside {
   width: 30%;
   padding-left: 4.2rem;
   flex-grow: 1;
+  max-height: 600px;
+  position: sticky;
+  top: 90px;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
 }
 
 aside h4 {
   margin-bottom: 1rem;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 aside #aside-main {
