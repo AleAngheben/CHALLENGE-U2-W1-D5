@@ -7,9 +7,16 @@ header {
   background-color: #ffc017;
   box-sizing: inherit;
   border-bottom: 1px solid #191919;
-  padding-top: 4rem;
+
+  height: 455px;
+  z-index: 1;
+  display: flex;
 }
 
+header .m-svg-container svg {
+  position: absolute;
+  right: 0;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,6 +30,9 @@ nav {
   z-index: 1;
 }
 
+#logo-container {
+  cursor: pointer;
+}
 .scrollNav {
   background-color: white;
 }
@@ -34,6 +44,7 @@ nav ul {
   list-style-type: none;
   gap: 20px;
   align-self: center;
+  cursor: pointer;
 }
 nav button {
   color: white;
@@ -53,11 +64,12 @@ nav button {
   flex-direction: column;
   padding-inline: 3.2rem;
   width: 700px;
+  padding-top: 5rem;
 }
 h1 {
-  font-size: 100px;
+  font-size: 106px;
   margin-bottom: 3rem;
-  font-family: "Roboto Serif", serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
 }
 #header-content h3 {
@@ -73,7 +85,8 @@ h1 {
   border: none;
   border-radius: 20px;
   font-size: 18px;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
+  cursor: pointer;
 }
 
 section {
@@ -89,7 +102,7 @@ section h5 {
   gap: 10px;
   margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 }
 #section-cards-container {
   display: flex;
@@ -102,12 +115,13 @@ section h5 {
   align-items: flex-start;
   gap: 20px;
   flex-grow: 1;
+  cursor: pointer;
 }
 
 .trending-cards h4 {
   font-size: 32px;
   color: #f2f2f2;
-  font-weight: 500;
+  font-weight: 700;
 }
 .trending-cards img {
   width: 20px;
@@ -142,6 +156,7 @@ article {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 .article-text {
   width: 70%;
@@ -183,6 +198,10 @@ article {
   padding: 0.3rem 0.7rem;
 }
 
+.article-box .article-text span span {
+  position: absolute;
+  padding-left: 5px;
+}
 main {
   padding-inline: 3.2rem;
   margin-top: 4rem;
@@ -220,6 +239,7 @@ aside #aside-button-container {
 aside h5 {
   color: #1a8917;
   margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 aside h5:hover {
@@ -228,9 +248,11 @@ aside h5:hover {
 
 aside #aside-button-container button {
   background-color: #f2f2f2;
-  padding: 0.7rem 1.2rem;
+  padding: 0.8rem 1.3rem;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 aside #aside-footer {
@@ -244,4 +266,5 @@ aside #aside-footer ul {
   gap: 20px;
   color: #6b6b6b;
   font-weight: 400;
+  cursor: pointer;
 }
