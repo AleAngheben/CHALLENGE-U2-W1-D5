@@ -34,10 +34,55 @@ nav {
   cursor: pointer;
 }
 .scrollNav {
-  background-color: white;
+  /* background-color: white; */
+  animation: scrollColorNav 1s linear forwards;
 }
 .scrollNavBtn {
-  background-color: #1a8917;
+  /* background-color: #1a8917; */
+  animation: scrollColorBtn 1s linear forwards;
+}
+.scrollNavBack {
+  /* background-color: white; */
+  animation: scrollColorNavBack 1s linear forwards;
+}
+.scrollNavBtnBack {
+  /* background-color: #1a8917; */
+  animation: scrollColorBtnBack 1s linear forwards;
+}
+
+@keyframes scrollColorNav {
+  from {
+    background-color: #ffc017;
+  }
+
+  to {
+    background-color: #f2f2f2;
+  }
+}
+@keyframes scrollColorBtn {
+  from {
+    background-color: #191919;
+  }
+  to {
+    background-color: #1a8917;
+  }
+}
+@keyframes scrollColorNavBack {
+  from {
+    background-color: #f2f2f2;
+  }
+
+  to {
+    background-color: #ffc017;
+  }
+}
+@keyframes scrollColorBtnBack {
+  from {
+    background-color: #1a8917;
+  }
+  to {
+    background-color: #191919;
+  }
 }
 nav ul {
   display: flex;
