@@ -30,6 +30,19 @@ nav {
   z-index: 1;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  border-bottom: 1px solid #191919;
+  padding-inline: 3.2rem;
+  align-items: center;
+  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 #logo-container {
   cursor: pointer;
 }
