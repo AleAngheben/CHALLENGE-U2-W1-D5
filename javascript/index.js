@@ -6,8 +6,6 @@ window.addEventListener("scroll", function () {
     navbar.className = "scrollNav";
     navBtn.className = "scrollNavBtn";
   } else {
-    // navbar.className.remove("scrollNav");
-    // navBtn.className.remove("scrollNavBtn");
     navbar.className = "scrollNavBack";
     navBtn.className = "scrollNavBtnBack";
   }

@@ -46,6 +46,13 @@ nav {
 #logo-container {
   cursor: pointer;
 }
+nav #nav-button {
+  color: white;
+  background-color: #191919;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+}
 .scrollNav {
   /* background-color: white; */
   animation: scrollColorNav 1s linear forwards;
@@ -103,13 +110,6 @@ nav ul {
   gap: 20px;
   align-self: center;
   cursor: pointer;
-}
-nav button {
-  color: white;
-  background-color: #191919;
-  padding: 0.7rem 1.2rem;
-  border: none;
-  border-radius: 20px;
 }
 
 #links-nav {
@@ -274,7 +274,7 @@ aside {
   max-height: 600px;
   position: sticky;
   top: 90px;
-  z-index: 1;
+  z-index: 0;
   font-family: "Roboto", sans-serif;
 }
 
